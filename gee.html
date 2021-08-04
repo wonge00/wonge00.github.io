@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8073399c7bd94584a6807b5346eef276 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 80.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8073399c7bd94584a6807b5346eef276" ></div>
+        
+</body>
+<script>    
+    
+            var map_8073399c7bd94584a6807b5346eef276 = L.map(
+                "map_8073399c7bd94584a6807b5346eef276",
+                {
+                    center: [16.49, 120.656],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8073399c7bd94584a6807b5346eef276);
+
+            
+
+        
+    
+            var tile_layer_886cbd465c724c40bc81b121d1c5fc92 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8073399c7bd94584a6807b5346eef276);
+        
+    
+            var tile_layer_ec6b3d9c51674b29940ebf2419277ee0 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8073399c7bd94584a6807b5346eef276);
+        
+    
+            var marker_371552f96f8e4d2cb91ea40acbd7e7d8 = L.marker(
+                [16.49, 120.656],
+                {}
+            ).addTo(map_8073399c7bd94584a6807b5346eef276);
+        
+    
+            marker_371552f96f8e4d2cb91ea40acbd7e7d8.bindTooltip(
+                `<div>
+                     Santo Niño Mine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_fe608c020f9c465a9db0f67d8a80996b = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/dcba087a0b88b4c50ef5de229f346e32-dce839f438fedbf45d5d5867d083925a/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8073399c7bd94584a6807b5346eef276);
+        
+    
+            var tile_layer_8234380e56694fe18ff3e65fb598e476 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/9543fa15531886b7e47df80198da7d29-3a654159cc1241734b66b96ea9be1ca5/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8073399c7bd94584a6807b5346eef276);
+        
+    
+            var layer_control_0ffdd41f328b4513940a13743d95bb34 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_886cbd465c724c40bc81b121d1c5fc92,
+                    "Google Satellite" : tile_layer_ec6b3d9c51674b29940ebf2419277ee0,
+                },
+                overlays :  {
+                    "DEM" : tile_layer_fe608c020f9c465a9db0f67d8a80996b,
+                    "NDVI" : tile_layer_8234380e56694fe18ff3e65fb598e476,
+                },
+            };
+            L.control.layers(
+                layer_control_0ffdd41f328b4513940a13743d95bb34.base_layers,
+                layer_control_0ffdd41f328b4513940a13743d95bb34.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8073399c7bd94584a6807b5346eef276);
+            tile_layer_ec6b3d9c51674b29940ebf2419277ee0.remove();
+        
+</script>
